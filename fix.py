@@ -9,7 +9,8 @@ chromedriver_path = './'
 driver = webdriver.Chrome()
 
 url = "https://www.google.com/maps/place/Coppice+Gate+-+Retirement+Living+-+McCarthy+Stone/@50.8522267,-1.4182785,17z/data=!3m1!4b1!4m6!3m5!1s0x487477422e7f89f1:0xc41eef697b284b6c!8m2!3d50.8522233!4d-1.4157036!16s%2Fg%2F11b7tqkcz5?entry=ttu"
-# driver.maximize_window()
+driver.maximize_window()
+
 driver.get(url)
 name_list = []
 with open('test_fix.txt', 'r') as result_file:
